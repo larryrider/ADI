@@ -14,7 +14,7 @@ Para poner en funcionamiento esta práctica hacen falta varios pasos.
 
 - Después hay que ejecutar el wepack-server que está dentro de 'larg1-frontend-adi'. Para ello podemos ejecutar './node_modules/webpack-dev-server/bin/webpack-dev-server.js'.
 
-<a href="https://documenter.getpostman.com/view/2789052/api-adi/71GzARf" target="_blank">Documentacion de la API REST</a>
+[Documentacion de la API REST](https://documenter.getpostman.com/view/2789052/api-adi/71GzARf)
 
 Partes opcionales:
 
