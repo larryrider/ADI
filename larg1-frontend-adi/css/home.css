@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,300');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.gal-container{
+	padding: 12px;
+}
+.gal-item{
+	overflow: hidden;
+	padding: 3px;
+}
+.gal-item .box{
+	height: 350px;
+	overflow: hidden;
+}
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+.gal-item a:focus{
+	outline: none;
+}
+.gal-item a:after{
+	content:"\e003";
+	font-family: 'Glyphicons Halflings';
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 3px;
+	left: 3px;
+	top: 3px;
+	bottom: 3px;
+	text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.gal-item a:hover:after{
+	opacity: 1;
+}
+
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+	outline: none;
+}
+
+.modal-open .gal-item button.close span{
+	position: relative;
+	top: -3px;
+	font-weight: lighter;
+	text-shadow:none;
+}
+.gal-container .modal-dialogue{
+	width: 80%;
+}
+.gal-container .description{
+	position: relative;
+	height: 40px;
+	top: -40px;
+	padding: 10px 25px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: left;
+}
+.gal-container .description h4{
+	margin:0px;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    position: fixed;
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+}
+
+@media (min-width: 768px){
+    .modal-dialog{
+        width: auto;
+        margin:auto;
+        max-width: 80%;
+    }
+}
+.modal-header {
+    background-color: #FFF;
+    text-align: left;
+}
+.modal-footer {
+    background-color: #FFF;
+}
+
+.panel-heading {
+    padding-left: 15px;
+    padding-bottom: 0px;
+    padding-top: 1px;
+}
+
+.panel-default > .panel-heading{
+    background-image: none;
+    background-color: #ed6b71;
+    color: #ffffff;
+}
+
+.img-navbar{
+    width: auto;
+    margin-top: -15px;
+    max-height: 250%;
+    display: block;
+    text-align: center;
+}
+
+#errorPhotos, #error{
+    color:red;
+}
+
+.img-modal{
+    color: red;
+    background-color: white;
+    width: 100%;
+    max-width: -webkit-fill-available;
+    max-height: 600;
+    object-fit: unset;
+}
+
+.img-gallery {
+    color: red;
+}
+
+
+
+.roundedCyan {
+    border: solid;
+    border-color:darkcyan;
+    border-radius: 10px;
+}
+
+.roundedRed {
+    border: solid;
+    border-color:red;
+    border-radius: 10px;
+}
+
+#url, #url:after {
+    content: none;
+    width: auto;
+}
+
+#dropDown {
+    width: 100%;
+    width:-webkit-fill-available;
+    width:-moz-available;
+}
